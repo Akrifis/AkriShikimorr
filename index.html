@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аниме-профиль</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <div class="profile-banner"></div>
+            <div class="profile-info">
+                <img id="user-avatar" src="" alt="Аватар" class="avatar">
+                <h1 id="username">Загрузка...</h1>
+                <div class="stats">
+                    <span id="anime-count"><i class="fas fa-tv"></i> 0</span>
+                    <span id="manga-count"><i class="fas fa-book"></i> 0</span>
+                    <span id="friends-count"><i class="fas fa-users"></i> 0</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="watching"><i class="fas fa-play"></i> Смотрю</button>
+            <button class="tab-btn" data-tab="completed"><i class="fas fa-check"></i> Просмотрено</button>
+            <button class="tab-btn" data-tab="planned"><i class="fas fa-clock"></i> В планах</button>
+        </nav>
+
+        <main class="content">
+            <div class="anime-grid" id="anime-list"></div>
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Обновлено: <span id="update-time"></span></p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
